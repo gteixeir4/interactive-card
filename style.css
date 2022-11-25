@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+
+}
+
+.left-bg{
+    display: flex;
+    background-image: url("images/bg-main-desktop.png");
+    width: 35%;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.front-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 25px;
+    margin-left: 35%;
+    background-image: url("images/bg-card-front.png");
+    overflow: visible;
+    width: 447px;
+    height: 245px;
+}
+
+.literal-number{
+    font-size: 25px;
+    color:white;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin: 50px 0 0 0;
+    
+}
+
+.bottom-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    color:white;
+    font-weight: 300;
+}
+
+.back-card{
+    display: flex;
+    background-image: url("images/bg-card-back.png") ;
+    margin-left: 50%;
+    padding-right: 70px;
+    justify-content: end;
+    align-items: center;
+    width: 447px;
+    height: 245px;
+    overflow: visible;
+}
+
+.cvc{
+    font-size: 16px;
+    color: white;
+    font-weight: 300;
+}
+
+.right-bg{
+    display: flex;
+    width: 65%;
+    align-items: center;
+    justify-content: center;
+}
+
+.especification{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}

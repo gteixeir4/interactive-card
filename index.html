@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | Interactive card details form</title>
 
@@ -15,41 +19,54 @@
   </style>
 </head>
   <body>
-    <div class="container-father">
-      <div class="front-card">
-      0000 0000 0000 0000
-      Jane Appleseed
-      00/00
-      </div>
-        <div class="back-card">000</div>
-          <div class="container1">
-          <img src="bg-main-desktop.png" alt="">
+    <div class="container">
+      <div class="left-bg">
+        <div class="front-card">
+          <div class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="84" height="47" fill="none"><ellipse cx="23.478" cy="23.5" rx="23.478" ry="23.5" fill="#fff"/><path d="M83.5 23.5c0 5.565-4.507 10.075-10.065 10.075-5.559 0-10.065-4.51-10.065-10.075 0-5.565 4.506-10.075 10.065-10.075 5.558 0 10.065 4.51 10.065 10.075Z" stroke="#fff"/></svg>
           </div>
-            <div class="container2">
-              <div class="formulario">
-                  Cardholder Name
-                  e.g. Jane Appleseed
-
-                  Card Number
-                  e.g. 1234 5678 9123 0000
-
-                  Exp. Date (MM/YY)
-                  MM
-                  YY
-
-                  CVC
-                  e.g. 123
-
-                  Confirm 
-              </div>
-            </div>
+          <div class="card-number">
+            <p class="literal-number">0000 0000 0000 0000</p>
+          </div>
+          <div class="bottom-info">
+            <p>NAME PERSON</p>
+            <p>00/00</p>
+          </div>
+        </div>
+        <div class="back-card">
+          <div class="cvc">
+            <p>000</p>
           </div>
         </div>
       </div>
+      <div class="right-bg">
+        <form class="form" action="submit">
+          <div>
+            <p>Full Name</p>
+            <input type="text" placeholder="Ex: Gabriel Teixeira Rocha"/>
+          </div>
+          <div>
+            <p>Card Number</p>
+            <input type="number" placeholder="Ex: 0000 0000 0000 0000"/>
+          </div>
+          <div class="especification">
+            <div class="exp-date">
+              <p>Exp. Date (MM/YY)</p>
+              <input type="number" placeholder="MM"/>
+              <input type="number" placeholder="YY"/>
+            </div>
+            <div class="right-cvc">
+              <p>CVC</p>
+              <input type="number" placeholder="000"/>
+            </div>
+          </div>
+          <button>Confirm</button>
+        </form>
+      </div>
     </div>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
   </body>
 </html>
